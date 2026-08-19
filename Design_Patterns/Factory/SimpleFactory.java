@@ -25,7 +25,7 @@ class PremiumBurger implements Burger{
 }
 
 class BurgerFactory {
-    public static Burger createBurger(String type) {
+    public Burger createBurger(String type) {
         if (type.equalsIgnoreCase("basic")) {
             return new BasicBurger();
         } else if (type.equalsIgnoreCase("standard")) {
